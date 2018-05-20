@@ -1,16 +1,23 @@
-body{
+body {
   font-size: 16px;
-  font-family: 'Montserrat', sans-serif;
-  background-color: white;
+  font-family: 'montserrat', sans-serif;
+  background: white;
 }
 
 @media screen and (min-width:750px) {
-  .container{
+  .container {
     display:flex;
     flex-wrap: wrap;
   }
 
-  p{
+  .project {
+    width:32%;
+    margin: 5px;
+  }
+}
+
+@media screen and (min-width:450px) {
+  p {
     word-wrap: break-word;
     width:400px;
     margin-left: auto;
@@ -19,30 +26,50 @@ body{
   }
 }
 
+@media screen and (max-width:749px) {
+  .project {
+    width:100%;
+    margin: 5px;
+  }
+
 }
-header{
+
+header {
+  display:flex;
+  flex-wrap: wrap;
   width:100%;
   min-height: 120px;
 }
 
-.udacity{
+.logo {
+  width:30%;
+  order:1;
+}
+
+.udacity {
   width: 133px;
   height:100px;
-  float:left;
-  margin-top: 5px;
+  justify-content: flex-start;
+  margin-top: 1px;
 }
 
-.name, .title{
+.header-title {
+  width: 70%;
+  order: 2;
+  justify-content: flex-end;
+}
+
+.name, .title {
   text-align: right;
-  margin-right: 10px;
+  margin-right: 5px;
 }
 
-.intro{
+.intro {
   text-align: center;
 }
 
-.welcome{
-  background-image: url("https://images.pexels.com/photos/110854/pexels-photo-110854.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+.welcome {
+  background: url("https://images.pexels.com/photos/110854/pexels-photo-110854.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") no-repeat fixed center;
   text-transform: uppercase;
   width:100%;
   color:white;
@@ -52,54 +79,48 @@ header{
   text-align: center;
   line-height: 50vh;
 
-  /* Creates the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
+  /* Helps creates the parallax scrolling effect */
   background-size: cover;
 }
 
-.about-me{
+.about-me {
   width:100%;
 }
 
-h2{
+h2 {
   text-transform: uppercase;
   text-align: center;
   font-weight: 800;
   font-size: 1.5em;
 }
 
-h3{
+h3 {
   text-transform: uppercase;
   text-align: center;
   font-weight: 100;
 }
 
-.work{
+.work {
   width:100%;
   height: auto;
 }
 
-.project{
-  width:32%;
-  margin: 5px;
-}
-
-.pixel, .trading-card, .memory-game{
+.pixel,
+.trading-card,
+.memory-game {
   width:230px;
   height:100px;
 }
 
-.contact{
+.contact {
   width:100%;
   text-align: center;
 }
 
-footer{
+footer {
   width:100%;
 }
 
-a:visited{
-  color:#33B5E5;
+a:visited {
+  color:#33b5e5;
 }
