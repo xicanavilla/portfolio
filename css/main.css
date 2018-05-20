@@ -44,6 +44,7 @@ header{
 .welcome{
   background-image: url("https://images.pexels.com/photos/110854/pexels-photo-110854.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
   text-transform: uppercase;
+  width:100%;
   color:white;
   min-height: 50vh;
   margin-bottom: 1em;
